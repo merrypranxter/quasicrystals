@@ -17,15 +17,15 @@
       },
       {
         "name": "Star",
-        "description": "5 thin rhombi meeting at their 36° angles",
-        "tiles_meeting": ["thin", "thin", "thin", "thin", "thin"],
+        "description": "10 thin rhombi meeting at their 36° acute tip angles (two from each of 5 rhombus orientations)",
+        "tiles_meeting": ["thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin"],
         "angles_at_vertex_deg": [36, 36, 36, 36, 36, 36, 36, 36, 36, 36],
         "angles_sum_deg": 360,
         "frequency": "common",
         "local_symmetry": "C5v",
         "thick_count": 0,
         "thin_count": 10,
-        "note": "10 thin rhombus corners (each contributing 36°) meeting at a point"
+        "note": "Each thin rhombus has a 36° acute angle; 10 such angles (from 10 rhombi) meet at a star-centre vertex"
       },
       {
         "name": "Ace",
@@ -106,7 +106,7 @@
       },
       {
         "name": "Star",
-        "description": "5 darts meeting at the 36° dart-tail angle",
+        "description": "5 darts arranged in a star pattern, each contributing their wide-end angle pair (2×36°=72°) at the centre vertex",
         "tiles_meeting": ["dart", "dart", "dart", "dart", "dart"],
         "angles_at_vertex_deg": [72, 72, 72, 72, 72],
         "angles_sum_deg": 360,
@@ -114,7 +114,7 @@
         "local_symmetry": "C5v",
         "kite_count": 0,
         "dart_count": 5,
-        "note": "Each dart contributes 2×36°=72° at the star center"
+        "note": "Each dart's wide end has two 36° angles; both come together at the vertex to contribute 72° per dart, 5×72°=360°"
       },
       {
         "name": "Ace",
@@ -129,9 +129,9 @@
       },
       {
         "name": "Deuce",
-        "description": "Alternating kites and darts meeting with mixed angles",
+        "description": "2 kites and 2 darts alternating at a vertex, each contributing 90° (kite at 72°+dart at 108° alternating)",
         "tiles_meeting": ["kite", "dart", "kite", "dart"],
-        "angles_at_vertex_deg": [72, 72, 72, 72, 72],
+        "angles_at_vertex_deg": [72, 108, 72, 108],
         "angles_sum_deg": 360,
         "frequency": "less common",
         "local_symmetry": "D2",
