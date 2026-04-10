@@ -2,22 +2,22 @@
   {
     "id": "qc001",
     "name": "Icosahedral Al-Mn",
-    "composition": "Al\u2088\u2086Mn\u2081\u2084",
+    "composition": "Al₈₆Mn₁₄",
     "formula": "Al86Mn14",
     "discovery_year": 1984,
     "discoverer": "Dan Shechtman",
     "institution": "National Bureau of Standards, Gaithersburg, Maryland, USA",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling (oblate and prolate rhombohedra)",
-    "space_group_notes": "Quasiperiodic, no space group in classical sense; 6D superspace group Pa\u035b35\u0305 (No. 217 analog)",
+    "space_group_notes": "Quasiperiodic, no space group in classical sense; 6D superspace group Pa͛35̅ (No. 217 analog)",
     "stability": "metastable",
     "preparation_method": "rapid solidification (melt spinning), cooling rate ~10^6 K/s",
     "lattice_constant_nm": 0.46,
     "density_g_cm3": 3.75,
     "hardness_vickers": 700,
-    "electrical_conductivity_S_m": 3.5e5,
+    "electrical_conductivity_S_m": 350000.0,
     "thermal_conductivity_W_mK": 2.5,
     "melting_point_C": 820,
     "stability_range": {
@@ -26,7 +26,12 @@
       "atmosphere": "inert (Ar or vacuum)",
       "note": "Metastable; transforms to periodic Al6Mn on annealing above ~350 C"
     },
-    "phonon_frequencies_THz": [2.1, 4.3, 6.8, 9.2],
+    "phonon_frequencies_THz": [
+      2.1,
+      4.3,
+      6.8,
+      9.2
+    ],
     "optical_properties": {
       "color": "silver-grey",
       "luster": "metallic",
@@ -40,29 +45,37 @@
       "indexing": "6-integer indexing (h1,h2,h3,h4,h5,h6) in Z^6"
     },
     "visual_profile": "Silver metallic with subtle 5-fold facets; rapidly quenched thin ribbons",
-    "ai_art_tags": ["icosahedral", "silver", "metallic", "5-fold", "quasiperiodic", "historic", "forbidden-symmetry"],
+    "ai_art_tags": [
+      "icosahedral",
+      "silver",
+      "metallic",
+      "5-fold",
+      "quasiperiodic",
+      "historic",
+      "forbidden-symmetry"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "First discovered quasicrystal (April 8, 1982, published 1984); showed forbidden icosahedral symmetry. Shechtman received Nobel Prize in Chemistry 2011. Metastable phase; transforms to periodic Al6Mn on annealing."
   },
   {
     "id": "qc002",
     "name": "Stable Icosahedral Al-Cu-Fe",
-    "composition": "Al\u2086\u2085Cu\u2082\u2080Fe\u2081\u2085",
+    "composition": "Al₆₅Cu₂₀Fe₁₅",
     "formula": "Al65Cu20Fe15",
     "discovery_year": 1987,
     "discoverer": "An-Pang Tsai",
     "institution": "Tohoku University, Sendai, Japan",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling",
-    "space_group_notes": "Thermodynamically stable; 6D superspace group Fm3\u035b5\u0305 (No. 225 analog)",
+    "space_group_notes": "Thermodynamically stable; 6D superspace group Fm3͛5̅ (No. 225 analog)",
     "stability": "thermodynamically stable",
     "preparation_method": "conventional casting and annealing; also single crystal growth by Czochralski-like method",
     "lattice_constant_nm": 0.63,
     "density_g_cm3": 4.45,
     "hardness_vickers": 800,
-    "electrical_conductivity_S_m": 8.0e4,
+    "electrical_conductivity_S_m": 80000.0,
     "thermal_conductivity_W_mK": 1.8,
     "melting_point_C": 870,
     "stability_range": {
@@ -71,7 +84,12 @@
       "atmosphere": "inert (Ar)",
       "note": "Stable single-phase below solidus; Al-Cu-Fe phase diagram has narrow stability field"
     },
-    "phonon_frequencies_THz": [1.8, 3.9, 6.2, 8.7],
+    "phonon_frequencies_THz": [
+      1.8,
+      3.9,
+      6.2,
+      8.7
+    ],
     "optical_properties": {
       "color": "silver with slight golden tint",
       "luster": "metallic",
@@ -85,23 +103,33 @@
       "indexing": "6-integer icosahedral indexing"
     },
     "friction_coefficient_dry": 0.05,
-    "surface_applications": ["non-stick coatings research", "low-friction bearings (experimental)"],
+    "surface_applications": [
+      "non-stick coatings research",
+      "low-friction bearings (experimental)"
+    ],
     "visual_profile": "Bright silver-gold metallic; forms large faceted single-grain pieces",
-    "ai_art_tags": ["icosahedral", "silver-gold", "metallic", "stable", "low-friction", "Al-Cu-Fe"],
+    "ai_art_tags": [
+      "icosahedral",
+      "silver-gold",
+      "metallic",
+      "stable",
+      "low-friction",
+      "Al-Cu-Fe"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "First thermodynamically STABLE icosahedral quasicrystal. Landmark discovery by Tsai (1987). Very low friction coefficient (~0.05, comparable to PTFE/Teflon). Large single crystals possible. Used in non-stick coating and low-friction surface research."
   },
   {
     "id": "qc003",
     "name": "Icosahedral Ti-Zr-Ni",
-    "composition": "Ti\u2084\u2080Zr\u2084\u2080Ni\u2082\u2080",
+    "composition": "Ti₄₀Zr₄₀Ni₂₀",
     "formula": "Ti40Zr40Ni20",
     "discovery_year": 1993,
     "discoverer": "W. Kelton and colleagues",
     "institution": "Washington University, St. Louis, USA",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling",
     "space_group_notes": "Metastable to moderately stable; transforms on prolonged annealing",
     "stability": "metastable/marginally stable",
@@ -109,7 +137,7 @@
     "lattice_constant_nm": 0.52,
     "density_g_cm3": 5.1,
     "hardness_vickers": 650,
-    "electrical_conductivity_S_m": 5.5e5,
+    "electrical_conductivity_S_m": 550000.0,
     "thermal_conductivity_W_mK": 3.2,
     "melting_point_C": 950,
     "stability_range": {
@@ -118,7 +146,12 @@
       "atmosphere": "inert",
       "note": "Transforms to periodic Ti2Ni and related phases on annealing"
     },
-    "phonon_frequencies_THz": [2.5, 5.0, 7.8, 10.5],
+    "phonon_frequencies_THz": [
+      2.5,
+      5.0,
+      7.8,
+      10.5
+    ],
     "optical_properties": {
       "color": "silver-grey",
       "luster": "metallic",
@@ -136,21 +169,27 @@
       "note": "Ti-Zr-Ni QC investigated for hydrogen storage applications; absorbs H2 reversibly"
     },
     "visual_profile": "Dull grey metallic; typical of Ti-Zr alloys",
-    "ai_art_tags": ["icosahedral", "grey", "titanium", "zirconium", "hydrogen-storage"],
+    "ai_art_tags": [
+      "icosahedral",
+      "grey",
+      "titanium",
+      "zirconium",
+      "hydrogen-storage"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "Ti-Zr-Ni system notable for hydrogen storage properties. Related to work by Elser and Henley on icosahedral Frank-Kasper phases. Used in studies connecting quasicrystal structure to hydrogen absorption."
   },
   {
     "id": "qc004",
     "name": "Binary Icosahedral Cd-Yb",
-    "composition": "Cd\u2085\u2087Yb\u2088",
+    "composition": "Cd₅₇Yb₈",
     "formula": "Cd57Yb8",
     "discovery_year": 2000,
     "discoverer": "An-Pang Tsai",
     "institution": "National Institute for Materials Science (NIMS), Tsukuba, Japan",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling (Tsai-type cluster)",
     "space_group_notes": "Thermodynamically stable binary quasicrystal; first binary icosahedral QC",
     "stability": "thermodynamically stable",
@@ -158,7 +197,7 @@
     "lattice_constant_nm": 1.56,
     "density_g_cm3": 7.89,
     "hardness_vickers": 220,
-    "electrical_conductivity_S_m": 9.0e5,
+    "electrical_conductivity_S_m": 900000.0,
     "thermal_conductivity_W_mK": 8.5,
     "melting_point_C": 620,
     "stability_range": {
@@ -167,7 +206,12 @@
       "atmosphere": "inert (Ar)",
       "note": "Stable binary; Cd vapor pressure high, handle with care above 400C"
     },
-    "phonon_frequencies_THz": [1.2, 2.8, 4.5, 6.1],
+    "phonon_frequencies_THz": [
+      1.2,
+      2.8,
+      4.5,
+      6.1
+    ],
     "optical_properties": {
       "color": "silver-white with slight yellow tint (Cd)",
       "luster": "metallic, bright",
@@ -192,21 +236,28 @@
       "note": "Five concentric icosahedral shells; first icosahedral QC with solved atomic structure"
     },
     "visual_profile": "Bright silver-white metallic; large single grains with icosahedral facets visible",
-    "ai_art_tags": ["icosahedral", "binary", "cadmium", "ytterbium", "solved-structure", "Tsai-cluster"],
+    "ai_art_tags": [
+      "icosahedral",
+      "binary",
+      "cadmium",
+      "ytterbium",
+      "solved-structure",
+      "Tsai-cluster"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "First binary (two-element) icosahedral quasicrystal. Nobel-worthy contribution by Tsai (2000). Only two elements enabled complete atomic structure solution. Revealed concentric icosahedral shell motif (Tsai cluster). Published in Nature 408, 537 (2000)."
   },
   {
     "id": "qc005",
     "name": "Icosahedral Al-Pd-Mn",
-    "composition": "Al\u2087\u2080Pd\u2082\u2080Mn\u2081\u2080",
+    "composition": "Al₇₀Pd₂₀Mn₁₀",
     "formula": "Al70Pd20Mn10",
     "discovery_year": 1990,
     "discoverer": "Tsai group / Hiraga group",
     "institution": "Tohoku University and NIMS, Japan",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling",
     "space_group_notes": "Thermodynamically stable; large single crystals possible (cm scale); face-centered icosahedral (FCI) type",
     "stability": "thermodynamically stable",
@@ -214,7 +265,7 @@
     "lattice_constant_nm": 0.64,
     "density_g_cm3": 4.35,
     "hardness_vickers": 630,
-    "electrical_conductivity_S_m": 7.0e4,
+    "electrical_conductivity_S_m": 70000.0,
     "thermal_conductivity_W_mK": 2.0,
     "melting_point_C": 830,
     "stability_range": {
@@ -223,7 +274,12 @@
       "atmosphere": "Ar",
       "note": "Stable; used for fundamental physics measurements due to large single crystal availability"
     },
-    "phonon_frequencies_THz": [1.6, 3.4, 5.8, 8.0],
+    "phonon_frequencies_THz": [
+      1.6,
+      3.4,
+      5.8,
+      8.0
+    ],
     "optical_properties": {
       "color": "silver with subtle pale grey",
       "luster": "metallic, high reflectance",
@@ -249,21 +305,28 @@
       "wettability": "low"
     },
     "visual_profile": "Mirror-bright silver metallic; perfect single crystals show icosahedral facets",
-    "ai_art_tags": ["icosahedral", "single-crystal", "silver", "transport-anomaly", "STM-surface", "Al-Pd-Mn"],
+    "ai_art_tags": [
+      "icosahedral",
+      "single-crystal",
+      "silver",
+      "transport-anomaly",
+      "STM-surface",
+      "Al-Pd-Mn"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "Workhorse material for QC physics. Large single crystals enable anisotropy measurements. 5-fold surface imaged by STM showing quasiperiodic atomic terraces. Exhibits inverse Matthiessen rule (conductivity increases with disorder). Critical material for understanding QC electronic properties."
   },
   {
     "id": "qc006",
     "name": "Icosahedral Al-Li-Cu",
-    "composition": "Al\u2086Mn\u2081Li\u2083Cu",
+    "composition": "Al₅₆Li₃₃Cu₁₁",
     "formula": "Al56Li33Cu11",
     "discovery_year": 1986,
     "discoverer": "M.D. Ball and D.J. Lloyd",
     "institution": "Alcan International, Kingston, Ontario, Canada",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling",
     "space_group_notes": "Stable in certain Al-Li-Cu compositions; body-centered icosahedral (BCI) type",
     "stability": "stable in select compositions",
@@ -271,7 +334,7 @@
     "lattice_constant_nm": 0.51,
     "density_g_cm3": 2.39,
     "hardness_vickers": 560,
-    "electrical_conductivity_S_m": 4.0e5,
+    "electrical_conductivity_S_m": 400000.0,
     "thermal_conductivity_W_mK": 3.5,
     "melting_point_C": 700,
     "stability_range": {
@@ -280,7 +343,12 @@
       "atmosphere": "inert",
       "note": "Stable in Al-Li-Cu; low density due to Li content makes it interesting for aerospace"
     },
-    "phonon_frequencies_THz": [2.3, 4.8, 7.5, 10.0],
+    "phonon_frequencies_THz": [
+      2.3,
+      4.8,
+      7.5,
+      10.0
+    ],
     "optical_properties": {
       "color": "silver-grey",
       "luster": "metallic",
@@ -298,21 +366,28 @@
       "density_comparison": "Comparable to standard Al alloys (~2.7 g/cm3) but lighter due to Li"
     },
     "visual_profile": "Light grey-silver; lower density than typical Al-Cu-Fe or Al-Pd-Mn QC",
-    "ai_art_tags": ["icosahedral", "silver", "lightweight", "lithium", "aerospace", "BCI-type"],
+    "ai_art_tags": [
+      "icosahedral",
+      "silver",
+      "lightweight",
+      "lithium",
+      "aerospace",
+      "BCI-type"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "First known icosahedral quasicrystal in a commercially relevant alloy system (Al-Li). Discovered in 1986 by Ball and Lloyd at Alcan. Low density due to Li makes it of interest for lightweight structural applications. BCI (body-centered icosahedral) type structure."
   },
   {
     "id": "qc007",
     "name": "Icosahedral Zn-Mg-Ho (RE-containing)",
-    "composition": "Zn\u2086\u2080Mg\u2083\u2080Ho\u2081\u2080",
+    "composition": "Zn₆₀Mg₃₀Ho₁₀",
     "formula": "Zn60Mg30Ho10",
     "discovery_year": 1994,
     "discoverer": "A.-P. Tsai, A. Niikura, A. Inoue, T. Masumoto",
     "institution": "Tohoku University, Japan",
     "symmetry_type": "icosahedral",
     "symmetry_fold": 6,
-    "point_group": "m3\u035b5 (Ih)",
+    "point_group": "m3͛5 (Ih)",
     "tiling_analog": "3D icosahedral Penrose tiling",
     "space_group_notes": "Stable icosahedral QC; Zn-Mg-RE system with various RE (Y, Ho, Er, Tb, Dy, Nd, Sm, Gd, Tb)",
     "stability": "thermodynamically stable",
@@ -320,7 +395,7 @@
     "lattice_constant_nm": 0.72,
     "density_g_cm3": 5.2,
     "hardness_vickers": 400,
-    "electrical_conductivity_S_m": 3.8e5,
+    "electrical_conductivity_S_m": 380000.0,
     "thermal_conductivity_W_mK": 6.5,
     "melting_point_C": 580,
     "stability_range": {
@@ -329,7 +404,12 @@
       "atmosphere": "inert",
       "note": "Stable; RE choice affects magnetic properties"
     },
-    "phonon_frequencies_THz": [1.5, 3.2, 5.1, 7.0],
+    "phonon_frequencies_THz": [
+      1.5,
+      3.2,
+      5.1,
+      7.0
+    ],
     "optical_properties": {
       "color": "grey-silver",
       "luster": "metallic, moderate",
@@ -350,14 +430,22 @@
       "note": "Rare-earth moments on quasiperiodic lattice show spin-glass freezing. No long-range magnetic order. Frustration due to quasiperiodic geometry."
     },
     "visual_profile": "Grey-silver metallic; powder or cast ingot form; RE substitution gives same visual appearance",
-    "ai_art_tags": ["icosahedral", "grey", "magnetic", "rare-earth", "spin-glass", "holmium", "frustrated-magnetism"],
+    "ai_art_tags": [
+      "icosahedral",
+      "grey",
+      "magnetic",
+      "rare-earth",
+      "spin-glass",
+      "holmium",
+      "frustrated-magnetism"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "Zn-Mg-Ho is part of a series of Zn-Mg-RE (RE = rare earth) stable icosahedral QC. Ho, Y, Er, Dy substitutions all produce stable icosahedral phase. Magnetic RE atoms (Ho, Er, Dy) show spin-glass behavior at low T due to quasiperiodic frustration. Important for studies of magnetism in aperiodic lattices."
   },
   {
     "id": "qc008",
     "name": "Decagonal Al-Co-Ni",
-    "composition": "Al\u2087\u2082Co\u2088Ni\u2082\u2080",
+    "composition": "Al₇₂Co₈Ni₂₀",
     "formula": "Al72Co8Ni20",
     "discovery_year": 1988,
     "discoverer": "Tsai, Inoue, Masumoto",
@@ -373,7 +461,7 @@
     "period_along_10fold_axis_nm": 0.408,
     "density_g_cm3": 4.52,
     "hardness_vickers": 780,
-    "electrical_conductivity_S_m": 9.5e4,
+    "electrical_conductivity_S_m": 95000.0,
     "thermal_conductivity_W_mK": 2.8,
     "melting_point_C": 1148,
     "stability_range": {
@@ -382,7 +470,12 @@
       "atmosphere": "Ar",
       "note": "Stable single phase in Al-rich corner of Al-Co-Ni phase diagram"
     },
-    "phonon_frequencies_THz": [2.0, 4.1, 6.5, 8.8],
+    "phonon_frequencies_THz": [
+      2.0,
+      4.1,
+      6.5,
+      8.8
+    ],
     "optical_properties": {
       "color": "silver-grey",
       "luster": "metallic",
@@ -407,7 +500,15 @@
       "note": "Phasons in decagonal QC exist only in the 2D quasiperiodic plane, not along the periodic axis"
     },
     "visual_profile": "Silver-grey metallic; anisotropic single crystals show different faces along periodic vs. quasiperiodic directions",
-    "ai_art_tags": ["decagonal", "10-fold", "silver", "layered", "anisotropic", "Al-Co-Ni", "quasiperiodic"],
+    "ai_art_tags": [
+      "decagonal",
+      "10-fold",
+      "silver",
+      "layered",
+      "anisotropic",
+      "Al-Co-Ni",
+      "quasiperiodic"
+    ],
     "shader_reference": "penrose_p2_tiling.glsl",
     "notes": "Most studied decagonal (10-fold) quasicrystal. Quasiperiodic in 2D (Penrose-like) + periodic in 3rd direction. Anisotropic physical properties. Large single crystals available. Al72Co8Ni20 and Al70Co15Ni15 are two studied compositions. High melting point (1148 C) allows high-T studies."
   }
