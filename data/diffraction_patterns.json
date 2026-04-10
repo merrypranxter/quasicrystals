@@ -1,0 +1,152 @@
+{
+  "description": "X-ray and electron diffraction pattern characteristics of quasicrystals and related structures",
+  "key_principle": "Quasicrystals show sharp Bragg peaks (like crystals) but with irrational peak spacing ratios (unlike crystals). The existence of sharp peaks despite forbidden symmetry axes was the original experimental signature.",
+  "comparison": {
+    "periodic_crystal": {
+      "peak_type": "sharp Bragg peaks",
+      "peak_ratio": "rational (integer Miller indices h,k,l)",
+      "symmetry": "one of 32 crystallographic point groups",
+      "forbidden_symmetries": "5, 7, 8, 9, 10, 11, 12-fold rotation axes",
+      "indexing_integers_needed": 3,
+      "long_range_order": "translational periodicity"
+    },
+    "quasicrystal": {
+      "peak_type": "sharp Bragg peaks",
+      "peak_ratio": "irrational (τ = φ ≈ 1.618 for icosahedral/decagonal; 1+√2 for octagonal)",
+      "symmetry": "can include 5, 8, 10, 12-fold axes",
+      "indexing_integers_needed": "5 or 6 (more than 3)",
+      "long_range_order": "quasiperiodic order (no translational periodicity)"
+    },
+    "amorphous": {
+      "peak_type": "broad diffuse rings (no sharp peaks)",
+      "peak_ratio": "not applicable",
+      "symmetry": "no long-range order",
+      "indexing_integers_needed": "not applicable",
+      "long_range_order": "none"
+    }
+  },
+  "indexing_methods": {
+    "icosahedral_6D": {
+      "description": "6 integers (n1..n6) needed to label each Bragg peak of an icosahedral QC",
+      "basis_vectors": "6 vectors along icosahedral 5-fold axes in 6D embedding space",
+      "reduction_to_3D": "Project 6D reciprocal lattice onto 3D physical space"
+    },
+    "decagonal_5D": {
+      "description": "5 integers needed: 4 for in-plane quasiperiodic dimensions + 1 for periodic stacking axis",
+      "in_plane_indexing": "4 integers with basis rotated by 36° steps"
+    },
+    "penrose_4D": {
+      "description": "4 integers needed to index 2D Penrose diffraction pattern",
+      "basis_vectors": "4 vectors at 72° intervals in 4D space projected to 2D"
+    }
+  },
+  "materials": [
+    {
+      "material": "Al-Mn (icosahedral)",
+      "chemical_formula": "Al86Mn14",
+      "symmetry": "icosahedral Ih",
+      "discovery_year": 1984,
+      "indexing_dimensions": 6,
+      "characteristic_d_spacings_nm": [0.204, 0.127, 0.078],
+      "peak_ratio_example": "Adjacent principal peaks along 5-fold axis: ratio ≈ τ = 1.618",
+      "bragg_peak_density": "Countably infinite, dense on real line",
+      "key_diffraction_features": [
+        "10 bright spots in 5-fold zone axis pattern (SAED)",
+        "Pattern indistinguishable from crystal at first glance but cannot be indexed with 3 integers",
+        "Concentric rings of 10 spots along 5-fold axis",
+        "6 spots along 3-fold axis, 4 along 2-fold axis (full icosahedral symmetry)"
+      ],
+      "original_experiment": "Selected area electron diffraction (SAED) in TEM by Shechtman 1982/1984",
+      "notes": "Shechtman's original 1984 pattern showed 10 sharp spots with icosahedral arrangement; metastable phase"
+    },
+    {
+      "material": "Al-Cu-Fe (icosahedral)",
+      "chemical_formula": "Al65Cu20Fe15",
+      "symmetry": "icosahedral Ih",
+      "discovery_year": 1987,
+      "indexing_dimensions": 6,
+      "characteristic_d_spacings_nm": [0.210, 0.131, 0.081],
+      "peak_ratio_example": "Peak spacing ratio along 5-fold axis ≈ φ = 1.618",
+      "bragg_peak_density": "Countably infinite, dense",
+      "key_diffraction_features": [
+        "Thermodynamically stable; extremely sharp peaks",
+        "Peaks sharper than Al-Mn due to equilibrium phase",
+        "Full icosahedral Ih symmetry in all zone axes"
+      ],
+      "notes": "First thermodynamically stable icosahedral QC; X-ray peaks as sharp as good crystals"
+    },
+    {
+      "material": "Al-Co-Ni (decagonal)",
+      "chemical_formula": "Al71.5Co14.5Ni14",
+      "symmetry": "decagonal D10h",
+      "discovery_year": 1989,
+      "indexing_dimensions": 5,
+      "characteristic_d_spacings_nm": [0.405, 0.203, 0.136],
+      "peak_ratio_example": "In-plane peak ratios ≈ φ; out-of-plane (stacking): integer ratios",
+      "bragg_peak_density": "Dense in quasiperiodic plane, discrete along stacking axis",
+      "key_diffraction_features": [
+        "10-fold symmetric ring pattern in zone axis along stacking direction",
+        "Standard periodic pattern perpendicular to stacking axis",
+        "Clear separation of quasiperiodic and periodic dimensions"
+      ],
+      "notes": "Model system for decagonal QC; atomic structure studied by X-ray and neutron diffraction"
+    },
+    {
+      "material": "Cr-Ni (dodecagonal)",
+      "chemical_formula": "Cr75Ni25",
+      "symmetry": "dodecagonal D12h",
+      "discovery_year": 1987,
+      "indexing_dimensions": 5,
+      "characteristic_d_spacings_nm": [0.450, 0.260, 0.225],
+      "peak_ratio_example": "Dodecagonal peak spacing involves 2+√3 ≈ 3.732",
+      "bragg_peak_density": "Dense in quasiperiodic plane",
+      "key_diffraction_features": [
+        "12 bright spots in 12-fold zone axis pattern",
+        "Mixture of √3 and √2 irrational ratios",
+        "Both triangular and square sub-lattice features"
+      ],
+      "notes": "First dodecagonal QC; thin-film specimen; also found in soft matter systems"
+    },
+    {
+      "material": "V-Ni-Si (octagonal)",
+      "chemical_formula": "V76Ni10Si14",
+      "symmetry": "octagonal D8h",
+      "discovery_year": 1987,
+      "indexing_dimensions": 5,
+      "characteristic_d_spacings_nm": [0.300, 0.213, 0.150],
+      "peak_ratio_example": "Peak spacing ratio ≈ 1+√2 = 2.414 (silver ratio)",
+      "bragg_peak_density": "Dense in quasiperiodic plane",
+      "key_diffraction_features": [
+        "8 bright spots in 8-fold zone axis pattern",
+        "Peak ratios involving √2",
+        "Ammann bar pattern dual to tiling"
+      ],
+      "notes": "Octagonal QC analog to Ammann-Beenker tiling"
+    }
+  ],
+  "experimental_techniques": {
+    "selected_area_electron_diffraction": {
+      "abbreviation": "SAED",
+      "instrument": "Transmission electron microscope (TEM)",
+      "advantage": "Sub-micron area; can probe single grains; showed original Shechtman result",
+      "limitation": "Dynamical diffraction effects in thick samples"
+    },
+    "x_ray_powder_diffraction": {
+      "abbreviation": "XRPD",
+      "advantage": "Bulk average; well-established peak positions and intensities",
+      "limitation": "Needs crystallites; poor for metastable phases",
+      "software_for_indexing": "CrystalDiffract, JANA2006"
+    },
+    "high_resolution_tem": {
+      "abbreviation": "HRTEM",
+      "advantage": "Direct imaging of atomic columns; reveals local structure",
+      "feature": "Shows phason defects, quasiperiodic modulation"
+    }
+  },
+  "mathematical_background": {
+    "bragg_condition": "2d sin(θ) = nλ",
+    "quasiperiodic_fourier": "Fourier transform of quasiperiodic function has pure point spectrum (sharp peaks) at positions that are integer linear combinations of incommensurable basis vectors",
+    "number_of_basis_vectors": "For D-dimensional quasicrystal: need N > D incommensurate basis vectors",
+    "shechtman_formula_reference": "D. Shechtman, I. Blech, D. Gratias, J.W. Cahn, Phys. Rev. Lett. 53, 1951 (1984)"
+  }
+}

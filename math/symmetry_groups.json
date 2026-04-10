@@ -1,0 +1,58 @@
+{
+  "description": "Symmetry group data for quasicrystal systems",
+  "point_groups": [
+    {
+      "name": "Icosahedral Ih",
+      "notation": "m-3-5 (international) / Ih (Schoenflies)",
+      "order": 120,
+      "rotation_axes": "6 five-fold, 10 three-fold, 15 two-fold",
+      "fold": 5,
+      "dimensions": 3,
+      "used_in": [
+        "icosahedral quasicrystals",
+        "3D Penrose tiling"
+      ],
+      "irreducible_representations": 10,
+      "character_table_note": "Available in group theory references; A_g, T_1g, T_2g, G_g, H_g + ungerade partners",
+      "forbidden_in_periodic": true,
+      "explanation": "Icosahedron cannot tile 3D space periodically"
+    },
+    {
+      "name": "Decagonal D10h",
+      "notation": "10/mmm",
+      "order": 40,
+      "fold": 10,
+      "dimensions": 3,
+      "used_in": [
+        "decagonal quasicrystals",
+        "Al-Co-Ni"
+      ],
+      "periodic_along_axis": true,
+      "notes": "Periodic along 10-fold axis, quasiperiodic in plane"
+    },
+    {
+      "name": "Octagonal D8h",
+      "notation": "8/mmm",
+      "order": 32,
+      "fold": 8,
+      "dimensions": 3,
+      "used_in": [
+        "octagonal quasicrystals",
+        "Mn-Si-Al"
+      ],
+      "periodic_along_axis": true
+    },
+    {
+      "name": "Dodecagonal D12h",
+      "notation": "12/mmm",
+      "order": 48,
+      "fold": 12,
+      "used_in": [
+        "dodecagonal quasicrystals",
+        "Ni-Cr"
+      ],
+      "periodic_along_axis": true
+    }
+  ],
+  "why_forbidden_symmetries_possible": "In periodic crystals, only 1,2,3,4,6-fold rotations are compatible with translational symmetry (crystallographic restriction theorem). Quasicrystals have long-range order without strict translational symmetry, so these constraints do not apply. The symmetry is realized in higher-dimensional space where it IS compatible with a (higher-dimensional) lattice."
+}

@@ -1,0 +1,52 @@
+{
+  "description": "Electronic properties of quasicrystal materials",
+  "key_features": ["pseudogap at Fermi level", "low conductivity vs metals", "unusual temperature dependence (conductivity INCREASES with temperature unlike metals)", "localized states near Fermi level", "Hume-Rothery stabilization mechanism"],
+  "materials": [
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "formula": "Al62Cu25.5Fe12.5",
+      "electrical_conductivity_S_m": 1.5e5,
+      "resistivity_ohm_m": 6.7e-6,
+      "temperature_coefficient_resistivity": "negative (unlike metals)",
+      "pseudogap_depth_eV": 0.5,
+      "pseudogap_at_E_F": true,
+      "electron_per_atom_ratio": 1.86,
+      "fermi_level_DOS_states_per_eV_atom": 0.2,
+      "comparison_to_Al_metal": "~100x more resistive than pure Al",
+      "notes": "Classic stable icosahedral QC, Hume-Rothery phase"
+    },
+    {
+      "material": "Al-Pd-Mn icosahedral",
+      "formula": "Al70Pd20Mn10",
+      "electrical_conductivity_S_m": 8e4,
+      "resistivity_ohm_m": 1.25e-5,
+      "temperature_coefficient_resistivity": "negative",
+      "pseudogap_depth_eV": 0.5,
+      "notes": "Best characterized single crystal QC"
+    },
+    {
+      "material": "Al-Mn icosahedral (metastable)",
+      "formula": "Al86Mn14",
+      "electrical_conductivity_S_m": 3.5e5,
+      "resistivity_ohm_m": 2.86e-6,
+      "temperature_coefficient_resistivity": "negative",
+      "notes": "Shechtman's original, metastable phase"
+    },
+    {
+      "material": "Ti-Zr-Ni icosahedral",
+      "formula": "Ti41.5Zr41.5Ni17",
+      "electrical_conductivity_S_m": 5e4,
+      "resistivity_ohm_m": 2e-5,
+      "temperature_coefficient_resistivity": "negative",
+      "notes": "Good hydrogen storage candidate"
+    },
+    {
+      "material": "Al-Co-Ni decagonal",
+      "formula": "Al72Co8Ni20",
+      "electrical_conductivity_S_m": 2e5,
+      "resistivity_ohm_m": 5e-6,
+      "temperature_coefficient_resistivity": "negative",
+      "notes": "10-fold symmetric, periodic along c-axis"
+    }
+  ]
+}

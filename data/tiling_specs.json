@@ -1,0 +1,331 @@
+{
+  "tilings": [
+    {
+      "id": "penrose_p2",
+      "name": "Penrose P2 (Rhombi)",
+      "aliases": ["thick-thin rhombus tiling", "rhombus tiling", "P2 tiling"],
+      "discoverer": "Roger Penrose",
+      "year": 1974,
+      "symmetry_fold": 5,
+      "symmetry_group": "D5 (locally)",
+      "tile_types": [
+        {
+          "name": "thick_rhombus",
+          "angles_deg": [72, 108, 72, 108],
+          "normalized_side": 1.0,
+          "area": 0.9511,
+          "color_convention": "tan/gold"
+        },
+        {
+          "name": "thin_rhombus",
+          "angles_deg": [36, 144, 36, 144],
+          "normalized_side": 1.0,
+          "area": 0.5878,
+          "color_convention": "white/light"
+        }
+      ],
+      "edge_lengths": {
+        "unit": 1.0,
+        "diagonal_thick_long": 1.6180339887,
+        "diagonal_thick_short": 1.0,
+        "diagonal_thin_long": 1.6180339887,
+        "diagonal_thin_short": 0.6180339887
+      },
+      "inflation_ratio": 1.6180339887,
+      "inflation_ratio_name": "golden ratio φ",
+      "tile_frequency_ratio": 1.6180339887,
+      "vertex_configurations": ["Sun", "Star", "Ace", "Deuce", "Jack", "Queen", "King"],
+      "matching_rules": "Arrow decorations on edges - must match at vertices",
+      "visual_complexity": 7,
+      "mathematical_complexity": 8,
+      "related_materials": ["Al-Mn", "Al-Cu-Fe"],
+      "shader_file": "penrose_p2_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Dual to P3 kite-dart tiling; can be derived from P3 by de Bruijn dualization"
+    },
+    {
+      "id": "penrose_p3",
+      "name": "Penrose P3 (Kite and Dart)",
+      "aliases": ["kite-dart tiling", "P3 tiling"],
+      "discoverer": "Roger Penrose",
+      "year": 1974,
+      "symmetry_fold": 5,
+      "symmetry_group": "D5 (locally)",
+      "tile_types": [
+        {
+          "name": "kite",
+          "angles_deg": [72, 72, 72, 144],
+          "normalized_short_side": 1.0,
+          "normalized_long_side": 1.6180339887,
+          "area": 1.5388,
+          "color_convention": "blue/dark"
+        },
+        {
+          "name": "dart",
+          "angles_deg": [36, 72, 36, 216],
+          "normalized_short_side": 1.0,
+          "normalized_long_side": 1.6180339887,
+          "area": 0.9511,
+          "color_convention": "red/light"
+        }
+      ],
+      "edge_lengths": {
+        "short_side": 1.0,
+        "long_side": 1.6180339887
+      },
+      "inflation_ratio": 1.6180339887,
+      "inflation_ratio_name": "golden ratio φ",
+      "tile_frequency_ratio": 1.6180339887,
+      "vertex_configurations": ["Sun", "Star", "Ace", "Deuce", "Jack", "Queen", "King"],
+      "matching_rules": "Bow-tie markings on tiles must align continuously across edges",
+      "visual_complexity": 6,
+      "mathematical_complexity": 8,
+      "related_materials": ["Al-Mn", "Al-Cu-Fe", "Al-Pd-Mn"],
+      "shader_file": "penrose_p3_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Dual to P2 rhombus tiling; first widely publicized Penrose tiling"
+    },
+    {
+      "id": "ammann_beenker",
+      "name": "Ammann-Beenker Tiling",
+      "aliases": ["8-fold tiling", "octagonal tiling", "AB tiling"],
+      "discoverer": "Robert Ammann and F. Beenker",
+      "year": 1982,
+      "symmetry_fold": 8,
+      "symmetry_group": "D8 (locally)",
+      "tile_types": [
+        {
+          "name": "square",
+          "angles_deg": [90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 1.0,
+          "color_convention": "gray"
+        },
+        {
+          "name": "rhombus_45",
+          "angles_deg": [45, 135, 45, 135],
+          "normalized_side": 1.0,
+          "area": 0.7071,
+          "color_convention": "white"
+        }
+      ],
+      "edge_lengths": {
+        "unit": 1.0,
+        "diagonal_rhombus_long": 1.8477590650225735,
+        "diagonal_rhombus_short": 0.7653668647301796
+      },
+      "inflation_ratio": 2.4142135623730951,
+      "inflation_ratio_name": "silver ratio δ = 1+√2",
+      "tile_frequency_ratio": 1.4142135623730951,
+      "vertex_configurations": ["Square-only", "Rhombus-only", "Mixed-A", "Mixed-B", "Mixed-C"],
+      "matching_rules": "Ammann bar decorations must form continuous straight lines",
+      "visual_complexity": 6,
+      "mathematical_complexity": 7,
+      "related_materials": ["Cr-Ni-Si", "V-Ni-Si", "Mn-Si"],
+      "shader_file": "ammann_beenker_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Projection from 4D hypercubic lattice; inflation ratio is silver ratio 1+√2"
+    },
+    {
+      "id": "stampfli",
+      "name": "Stampfli Tiling (12-fold)",
+      "aliases": ["12-fold tiling", "dodecagonal tiling", "Stampfli-Gaehler tiling"],
+      "discoverer": "Peter Stampfli",
+      "year": 1986,
+      "symmetry_fold": 12,
+      "symmetry_group": "D12 (locally)",
+      "tile_types": [
+        {
+          "name": "square",
+          "angles_deg": [90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 1.0,
+          "color_convention": "blue"
+        },
+        {
+          "name": "equilateral_triangle",
+          "angles_deg": [60, 60, 60],
+          "normalized_side": 1.0,
+          "area": 0.4330,
+          "color_convention": "orange"
+        },
+        {
+          "name": "rhombus_30",
+          "angles_deg": [30, 150, 30, 150],
+          "normalized_side": 1.0,
+          "area": 0.5,
+          "color_convention": "white"
+        }
+      ],
+      "edge_lengths": {
+        "unit": 1.0
+      },
+      "inflation_ratio": 2.7320508075688772,
+      "inflation_ratio_name": "2 + √3",
+      "tile_frequency_ratio": null,
+      "vertex_configurations": ["Triangle-square-rhombus", "All-triangle", "Square-dominant"],
+      "matching_rules": "Matching decorations on tile edges",
+      "visual_complexity": 7,
+      "mathematical_complexity": 8,
+      "related_materials": ["Cr-Ni", "V-Ni", "Ta-Te"],
+      "shader_file": "stampfli_12fold_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "12-fold rotational symmetry; related to dodecagonal quasicrystals found in alloys"
+    },
+    {
+      "id": "trilobite_sphinx",
+      "name": "Trilobite-Sphinx Tiling",
+      "aliases": ["trilobite sphinx tiling", "Goodman-Strauss tiling"],
+      "discoverer": "Chaim Goodman-Strauss",
+      "year": 1999,
+      "symmetry_fold": 5,
+      "symmetry_group": "D5 (locally)",
+      "tile_types": [
+        {
+          "name": "trilobite",
+          "angles_deg": [36, 72, 72, 72, 72, 36],
+          "normalized_side": 1.0,
+          "area": 3.0777,
+          "color_convention": "light green",
+          "sides": 6
+        },
+        {
+          "name": "sphinx",
+          "angles_deg": [36, 108, 36, 108, 36, 36],
+          "normalized_side": 1.0,
+          "area": 1.9021,
+          "color_convention": "dark green",
+          "sides": 6
+        }
+      ],
+      "edge_lengths": {
+        "unit": 1.0,
+        "long_edge": 1.6180339887
+      },
+      "inflation_ratio": 1.6180339887,
+      "inflation_ratio_name": "golden ratio φ",
+      "tile_frequency_ratio": 1.6180339887,
+      "vertex_configurations": ["Trilobite-centered", "Sphinx-centered", "Mixed"],
+      "matching_rules": "Edge notch and tab system; geometric matching enforces aperiodicity",
+      "visual_complexity": 9,
+      "mathematical_complexity": 9,
+      "related_materials": [],
+      "shader_file": "trilobite_sphinx_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Remarkable in that matching rules are enforced purely by tile shape (no decorations needed)"
+    },
+    {
+      "id": "pinwheel",
+      "name": "Pinwheel Tiling",
+      "aliases": ["Radin-Conway pinwheel", "1-2-√5 tiling"],
+      "discoverer": "John Conway and Charles Radin",
+      "year": 1994,
+      "symmetry_fold": null,
+      "symmetry_group": "Continuous rotation (statistically isotropic)",
+      "tile_types": [
+        {
+          "name": "right_triangle_1_2_sqrt5",
+          "angles_deg": [90, 63.4349, 26.5651],
+          "legs": [1.0, 2.0],
+          "hypotenuse": 2.2360679774997896,
+          "area": 1.0,
+          "color_convention": "varies by orientation"
+        }
+      ],
+      "edge_lengths": {
+        "short_leg": 1.0,
+        "long_leg": 2.0,
+        "hypotenuse": 2.2360679774997896
+      },
+      "inflation_ratio": 2.2360679774997896,
+      "inflation_ratio_name": "√5",
+      "tile_frequency_ratio": null,
+      "vertex_configurations": ["various"],
+      "matching_rules": "Chirality and orientation matching; tiles appear in countably infinite orientations",
+      "visual_complexity": 8,
+      "mathematical_complexity": 10,
+      "related_materials": [],
+      "shader_file": "pinwheel_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Unique property: tiles appear in infinitely many orientations; statistically but not locally isotropic"
+    },
+    {
+      "id": "robinson",
+      "name": "Robinson Tiling",
+      "aliases": ["Robinson triangle tiling", "R. Robinson aperiodic set"],
+      "discoverer": "Raphael Robinson",
+      "year": 1971,
+      "symmetry_fold": 4,
+      "symmetry_group": "D4 (locally), not quasicrystalline",
+      "tile_types": [
+        {
+          "name": "cross",
+          "angles_deg": [90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 5.0,
+          "color_convention": "blue",
+          "sides": 12
+        },
+        {
+          "name": "notched_square_A",
+          "angles_deg": [90, 90, 270, 90, 90, 90, 270, 90, 90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 3.0,
+          "color_convention": "red",
+          "sides": 12
+        },
+        {
+          "name": "notched_square_B",
+          "angles_deg": [90, 90, 90, 270, 90, 90, 90, 270, 90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 3.0,
+          "color_convention": "yellow",
+          "sides": 12
+        },
+        {
+          "name": "small_square",
+          "angles_deg": [90, 90, 90, 90],
+          "normalized_side": 1.0,
+          "area": 1.0,
+          "color_convention": "white",
+          "sides": 4
+        }
+      ],
+      "edge_lengths": {
+        "unit": 1.0
+      },
+      "inflation_ratio": 2.0,
+      "inflation_ratio_name": "factor of 2 (self-similar but not quasicrystalline)",
+      "tile_frequency_ratio": null,
+      "vertex_configurations": ["Corner", "Edge", "Center"],
+      "matching_rules": "Notch and protrusion system; cross and notched tiles enforce hierarchy",
+      "visual_complexity": 7,
+      "mathematical_complexity": 8,
+      "related_materials": [],
+      "shader_file": "robinson_tiling.glsl",
+      "dimension": 2,
+      "aperiodic": true,
+      "self_similar": true,
+      "notes": "Historical importance: one of the first aperiodic tile sets; uses 6 tiles; creates a hierarchical square grid structure"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "description": "Specifications for 7 aperiodic/quasicrystalline tilings",
+    "golden_ratio": 1.6180339887498948482,
+    "silver_ratio": 2.4142135623730950488,
+    "created": "2024"
+  }
+}

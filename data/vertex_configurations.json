@@ -1,0 +1,233 @@
+{
+  "penrose_p2": {
+    "name": "Penrose P2 Rhombi",
+    "total_vertex_types": 7,
+    "tile_types": ["thick_rhombus (angles 72°,108°,72°,108°)", "thin_rhombus (angles 36°,144°,36°,144°)"],
+    "configurations": [
+      {
+        "name": "Sun",
+        "description": "5 thick rhombi meeting at their 72° angles",
+        "tiles_meeting": ["thick", "thick", "thick", "thick", "thick"],
+        "angles_at_vertex_deg": [72, 72, 72, 72, 72],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C5v",
+        "thick_count": 5,
+        "thin_count": 0
+      },
+      {
+        "name": "Star",
+        "description": "10 thin rhombi meeting at their 36° acute tip angles (two from each of 5 rhombus orientations)",
+        "tiles_meeting": ["thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin", "thin"],
+        "angles_at_vertex_deg": [36, 36, 36, 36, 36, 36, 36, 36, 36, 36],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C5v",
+        "thick_count": 0,
+        "thin_count": 10,
+        "note": "Each thin rhombus has a 36° acute angle; 10 such angles (from 10 rhombi) meet at a star-centre vertex"
+      },
+      {
+        "name": "Ace",
+        "description": "1 thin rhombus (144° angle) + 2 thick rhombi (108° angle each)",
+        "tiles_meeting": ["thin", "thick", "thick"],
+        "angles_at_vertex_deg": [144, 108, 108],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C2v (mirror)",
+        "thick_count": 2,
+        "thin_count": 1
+      },
+      {
+        "name": "Deuce",
+        "description": "2 thin rhombi (36° each) + 1 thick rhombus (72°) + 2 thin rhombi (108° each)",
+        "tiles_meeting": ["thin", "thick", "thin", "thick", "thin"],
+        "angles_at_vertex_deg": [36, 72, 144, 72, 36],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C2v",
+        "thick_count": 2,
+        "thin_count": 3,
+        "note": "Configuration with alternating thick/thin rhombi"
+      },
+      {
+        "name": "Jack",
+        "description": "1 thick rhombus (108°) + 4 thin rhombi (36°, 36°, 36°, 72°) configuration",
+        "tiles_meeting": ["thick", "thin", "thin", "thin", "thin"],
+        "angles_at_vertex_deg": [108, 36, 72, 72, 36, 36],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "thick_count": 1,
+        "thin_count": 5,
+        "note": "Asymmetric vertex; multiple sub-types possible"
+      },
+      {
+        "name": "Queen",
+        "description": "2 thin rhombi + 3 thick rhombi meeting at various angles",
+        "tiles_meeting": ["thin", "thick", "thin", "thick", "thick"],
+        "angles_at_vertex_deg": [36, 72, 36, 108, 108],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "thick_count": 3,
+        "thin_count": 2,
+        "note": "Several distinct orientations possible"
+      },
+      {
+        "name": "King",
+        "description": "3 thin rhombi + 2 thick rhombi meeting at various angles",
+        "tiles_meeting": ["thin", "thick", "thin", "thick", "thin"],
+        "angles_at_vertex_deg": [36, 72, 36, 108, 72, 36],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "thick_count": 2,
+        "thin_count": 4,
+        "note": "Maximum valence vertex; several sub-types"
+      }
+    ]
+  },
+  "penrose_p3": {
+    "name": "Penrose P3 Kite and Dart",
+    "total_vertex_types": 7,
+    "tile_types": ["kite (angles 72°,72°,72°,144°)", "dart (angles 36°,72°,36°,216°)"],
+    "configurations": [
+      {
+        "name": "Sun",
+        "description": "5 kites meeting at the 72° tip angle",
+        "tiles_meeting": ["kite", "kite", "kite", "kite", "kite"],
+        "angles_at_vertex_deg": [72, 72, 72, 72, 72],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C5v",
+        "kite_count": 5,
+        "dart_count": 0
+      },
+      {
+        "name": "Star",
+        "description": "5 darts arranged in a star pattern, each contributing their wide-end angle pair (2×36°=72°) at the centre vertex",
+        "tiles_meeting": ["dart", "dart", "dart", "dart", "dart"],
+        "angles_at_vertex_deg": [72, 72, 72, 72, 72],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C5v",
+        "kite_count": 0,
+        "dart_count": 5,
+        "note": "Each dart's wide end has two 36° angles; both come together at the vertex to contribute 72° per dart, 5×72°=360°"
+      },
+      {
+        "name": "Ace",
+        "description": "1 dart (144° angle) + 2 kites (108° angle each) — asymmetric",
+        "tiles_meeting": ["dart", "kite", "kite"],
+        "angles_at_vertex_deg": [144, 108, 108],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "C2v",
+        "kite_count": 2,
+        "dart_count": 1
+      },
+      {
+        "name": "Deuce",
+        "description": "2 kites and 2 darts alternating at a vertex, each contributing 90° (kite at 72°+dart at 108° alternating)",
+        "tiles_meeting": ["kite", "dart", "kite", "dart"],
+        "angles_at_vertex_deg": [72, 108, 72, 108],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "D2",
+        "kite_count": 2,
+        "dart_count": 2
+      },
+      {
+        "name": "Jack",
+        "description": "Configuration with 1 kite and 4 darts",
+        "tiles_meeting": ["kite", "dart", "dart", "dart", "dart"],
+        "angles_at_vertex_deg": [144, 36, 72, 36, 72],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "kite_count": 1,
+        "dart_count": 4
+      },
+      {
+        "name": "Queen",
+        "description": "Configuration with 2 darts and 3 kites",
+        "tiles_meeting": ["dart", "kite", "dart", "kite", "kite"],
+        "angles_at_vertex_deg": [36, 72, 36, 108, 108],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "kite_count": 3,
+        "dart_count": 2
+      },
+      {
+        "name": "King",
+        "description": "Configuration with 2 kites and 4 darts",
+        "tiles_meeting": ["kite", "dart", "kite", "dart", "dart", "dart"],
+        "angles_at_vertex_deg": [72, 36, 72, 72, 36, 72],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1",
+        "kite_count": 2,
+        "dart_count": 4
+      }
+    ]
+  },
+  "ammann_beenker": {
+    "name": "Ammann-Beenker Tiling",
+    "total_vertex_types": 5,
+    "tile_types": ["square (90° angles)", "rhombus_45 (45° and 135° angles)"],
+    "configurations": [
+      {
+        "name": "Square_vertex",
+        "description": "4 squares meeting at a point (standard square lattice vertex)",
+        "tiles_meeting": ["square", "square", "square", "square"],
+        "angles_at_vertex_deg": [90, 90, 90, 90],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "D4"
+      },
+      {
+        "name": "Rhombus_vertex",
+        "description": "8 rhombi meeting at their 45° vertices",
+        "tiles_meeting": ["rhombus", "rhombus", "rhombus", "rhombus", "rhombus", "rhombus", "rhombus", "rhombus"],
+        "angles_at_vertex_deg": [45, 45, 45, 45, 45, 45, 45, 45],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "D8"
+      },
+      {
+        "name": "Mixed_A",
+        "description": "2 squares + 4 rhombi (alternating)",
+        "tiles_meeting": ["square", "rhombus", "rhombus", "square", "rhombus", "rhombus"],
+        "angles_at_vertex_deg": [90, 45, 45, 90, 45, 45],
+        "angles_sum_deg": 360,
+        "frequency": "common",
+        "local_symmetry": "D2"
+      },
+      {
+        "name": "Mixed_B",
+        "description": "1 square + 2 rhombi (at 135° angles) configuration",
+        "tiles_meeting": ["square", "rhombus", "square", "rhombus"],
+        "angles_at_vertex_deg": [90, 45, 135, 90],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C2"
+      },
+      {
+        "name": "Mixed_C",
+        "description": "3 squares + 2 rhombi meeting at vertex",
+        "tiles_meeting": ["square", "square", "rhombus", "square", "rhombus"],
+        "angles_at_vertex_deg": [90, 90, 45, 90, 45],
+        "angles_sum_deg": 360,
+        "frequency": "less common",
+        "local_symmetry": "C1"
+      }
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "note": "Angles at each vertex must sum to 360 degrees for a valid vertex configuration",
+    "matching_rule": "In a valid Penrose tiling, only these 7 vertex types are permitted; no others can appear"
+  }
+}

@@ -1,0 +1,279 @@
+---
+# Inflation (substitution) rules for aperiodic tilings
+# Inflation: replace each tile by a scaled-up version consisting of multiple smaller tiles
+# After n inflation steps, tile counts grow as (inflation_ratio)^n
+
+inflation_rules:
+
+  penrose_p2:
+    name: "Penrose P2 Rhombi"
+    scale_factor: 1.6180339887  # golden ratio φ = (1+√5)/2
+    tile_types:
+      - thick_rhombus
+      - thin_rhombus
+    substitution_rules:
+      thick_rhombus:
+        description: "One thick rhombus inflates to 1 thick rhombus + 2 thin rhombi"
+        result_tiles:
+          - type: thick_rhombus
+            count: 1
+            transform: "scaled by φ, center preserved, same orientation"
+          - type: thin_rhombus
+            count: 2
+            transform: "each rotated ±36° relative to original, scaled by φ"
+        total_output_tiles: 3
+      thin_rhombus:
+        description: "One thin rhombus inflates to 1 thick rhombus + 1 thin rhombus"
+        result_tiles:
+          - type: thick_rhombus
+            count: 1
+            transform: "scaled by φ, shifted to one end"
+          - type: thin_rhombus
+            count: 1
+            transform: "scaled by φ, shifted to other end"
+        total_output_tiles: 2
+    substitution_matrix:
+      - [1, 1]   # thick: 1 thick → 1 thick, 1 thin → 1 thick
+      - [2, 1]   # thin:  1 thick → 2 thin,  1 thin → 1 thin
+    # eigenvalues: φ ≈ 1.618 (dominant) and -1/φ ≈ -0.618
+    # eigenvector for φ: thick:thin ratio = φ:1
+    notes: >
+      After n inflation steps, tile counts grow as φ^n.
+      The ratio thick:thin → φ as n → ∞.
+      Matrix eigenvalue φ proves self-similarity under inflation.
+
+  penrose_p3:
+    name: "Penrose P3 Kite and Dart"
+    scale_factor: 1.6180339887  # golden ratio φ
+    tile_types:
+      - kite
+      - dart
+    substitution_rules:
+      kite:
+        description: "One kite inflates to 2 kites + 1 dart"
+        result_tiles:
+          - type: kite
+            count: 2
+            transform: "placed at tail end, scaled by φ"
+          - type: dart
+            count: 1
+            transform: "placed at head, scaled by φ, rotated 180°"
+        total_output_tiles: 3
+      dart:
+        description: "One dart inflates to 1 kite + 1 dart"
+        result_tiles:
+          - type: kite
+            count: 1
+            transform: "placed at head, scaled by φ"
+          - type: dart
+            count: 1
+            transform: "placed at tail, scaled by φ"
+        total_output_tiles: 2
+    substitution_matrix:
+      - [2, 1]   # kite counts
+      - [1, 1]   # dart counts
+    notes: >
+      Related to P2 by affine duality.
+      Kite:dart ratio → φ:1 as n → ∞.
+      Short sides of kite and dart are equal; long sides are φ times the short side.
+
+  ammann_beenker:
+    name: "Ammann-Beenker (8-fold)"
+    scale_factor: 2.4142135623730951  # silver ratio δ = 1+√2
+    tile_types:
+      - square
+      - rhombus_45
+    substitution_rules:
+      square:
+        description: "One square inflates to 4 squares + 4 rhombi (arranged in a larger octagonal pattern)"
+        result_tiles:
+          - type: square
+            count: 4
+            transform: "corner positions, scaled by δ, rotated 45°"
+          - type: rhombus_45
+            count: 4
+            transform: "edge positions, scaled by δ"
+        total_output_tiles: 8
+      rhombus_45:
+        description: "One rhombus inflates to 2 squares + 3 rhombi"
+        result_tiles:
+          - type: square
+            count: 2
+            transform: "at obtuse corners, scaled by δ"
+          - type: rhombus_45
+            count: 3
+            transform: "remaining area, scaled by δ"
+        total_output_tiles: 5
+    substitution_matrix:
+      - [4, 2]   # square counts
+      - [4, 3]   # rhombus counts
+    notes: >
+      Scale factor is the silver ratio 1+√2 ≈ 2.414.
+      Eigenvalue of substitution matrix is 3+2√2 = (1+√2)^2.
+      Square:rhombus ratio → √2:1 as n → ∞.
+
+  stampfli:
+    name: "Stampfli Tiling (12-fold)"
+    scale_factor: 2.7320508075688772  # 2+√3
+    tile_types:
+      - square
+      - equilateral_triangle
+      - rhombus_30
+    substitution_rules:
+      square:
+        description: "One square inflates to a pattern of squares, triangles, and rhombi"
+        result_tiles:
+          - type: square
+            count: 4
+            transform: "corner positions rotated 15°"
+          - type: equilateral_triangle
+            count: 8
+            transform: "edge positions"
+          - type: rhombus_30
+            count: 4
+            transform: "between triangles"
+        total_output_tiles: 16
+      equilateral_triangle:
+        description: "One equilateral triangle inflates to smaller triangles, squares, and rhombi"
+        result_tiles:
+          - type: equilateral_triangle
+            count: 3
+            transform: "corner positions"
+          - type: square
+            count: 1
+            transform: "center position"
+          - type: rhombus_30
+            count: 3
+            transform: "edge positions"
+        total_output_tiles: 7
+      rhombus_30:
+        description: "One 30° rhombus inflates to triangles, squares, and rhombi"
+        result_tiles:
+          - type: equilateral_triangle
+            count: 2
+            transform: "at acute corners"
+          - type: square
+            count: 1
+            transform: "at center"
+          - type: rhombus_30
+            count: 2
+            transform: "remaining positions"
+        total_output_tiles: 5
+    notes: >
+      The Stampfli tiling has 12-fold rotational symmetry.
+      Scale factor is 2+√3 ≈ 3.732; a useful identity: (2+√3)(2-√3) = 1.
+      Triangle:square ratio and rhombus frequencies follow irrational algebraic numbers.
+
+  trilobite_sphinx:
+    name: "Trilobite-Sphinx Tiling"
+    scale_factor: 1.6180339887  # golden ratio φ
+    tile_types:
+      - trilobite
+      - sphinx
+    substitution_rules:
+      trilobite:
+        description: "One trilobite inflates to 1 trilobite + 2 sphinx tiles"
+        result_tiles:
+          - type: trilobite
+            count: 1
+            transform: "scaled by φ, centered"
+          - type: sphinx
+            count: 2
+            transform: "placed at symmetric positions, rotated"
+        total_output_tiles: 3
+      sphinx:
+        description: "One sphinx inflates to 1 trilobite + 1 sphinx"
+        result_tiles:
+          - type: trilobite
+            count: 1
+            transform: "scaled by φ"
+          - type: sphinx
+            count: 1
+            transform: "scaled by φ"
+        total_output_tiles: 2
+    substitution_matrix:
+      - [1, 1]
+      - [2, 1]
+    notes: >
+      Matching rules are enforced purely by geometric shape (notches/tabs) with no decorations.
+      Golden-ratio inflation same structure as Penrose P2.
+      One of few tilings where aperiodicity follows from shape alone.
+
+  pinwheel:
+    name: "Pinwheel Tiling"
+    scale_factor: 2.2360679774997896  # √5
+    tile_types:
+      - right_triangle_1_2_sqrt5
+    substitution_rules:
+      right_triangle_1_2_sqrt5:
+        description: "One right triangle (legs 1 and 2) inflates to 5 similar triangles at √5 scale"
+        result_tiles:
+          - type: right_triangle_1_2_sqrt5
+            count: 5
+            transform: "each rotated by arctan(1/2) ≈ 26.57°; all 5 fit inside scaled triangle"
+        total_output_tiles: 5
+    substitution_matrix:
+      - [5]    # 1 tile type; each inflates to 5
+    notes: >
+      Inflation ratio is √5 ≈ 2.236.
+      After n inflations, tiles appear in n distinct orientations (infinitely many overall).
+      The tiling is statistically isotropic: all orientations equally frequent in limit.
+      No other known substitution tiling achieves full continuous rotational statistics.
+
+  robinson:
+    name: "Robinson Tiling"
+    scale_factor: 2.0  # factor of 2
+    tile_types:
+      - cross
+      - notched_square_A
+      - notched_square_B
+      - small_square
+    substitution_rules:
+      cross:
+        description: "Cross tile inflates to a larger cross structure"
+        result_tiles:
+          - type: cross
+            count: 1
+            transform: "scaled by 2"
+          - type: small_square
+            count: 4
+            transform: "corners"
+        total_output_tiles: 5
+      notched_square_A:
+        description: "Notched square A inflates to a combination with orientation A"
+        result_tiles:
+          - type: notched_square_A
+            count: 1
+            transform: "scaled by 2"
+          - type: notched_square_B
+            count: 1
+            transform: "adjacent, scaled by 2"
+          - type: small_square
+            count: 2
+            transform: "gap-filling"
+        total_output_tiles: 4
+      notched_square_B:
+        description: "Notched square B inflates to a combination with orientation B"
+        result_tiles:
+          - type: notched_square_A
+            count: 1
+            transform: "adjacent, scaled by 2"
+          - type: notched_square_B
+            count: 1
+            transform: "scaled by 2"
+          - type: small_square
+            count: 2
+            transform: "gap-filling"
+        total_output_tiles: 4
+      small_square:
+        description: "Small square becomes part of surrounding structure"
+        result_tiles:
+          - type: small_square
+            count: 4
+            transform: "2×2 arrangement, scaled by 2"
+        total_output_tiles: 4
+    notes: >
+      Robinson's 1971 proof that aperiodic tiling is possible with 6 tile shapes.
+      Hierarchical structure creates nested squares at scales 2^n.
+      Not quasicrystalline (integer scale factor, no irrational peak ratios).
+      Historical importance: paved the way for Penrose's 2-tile solution.

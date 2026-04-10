@@ -1,0 +1,66 @@
+{
+  "description": "Color palettes derived from actual physical appearance of quasicrystal materials",
+  "materials": [
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "appearance": "Silver-grey with subtle bronze iridescence",
+      "palette": {
+        "base": {"hex": "#A8A9AD", "name": "aluminium silver"},
+        "highlight": {"hex": "#CD7F32", "name": "copper bronze"},
+        "shadow": {"hex": "#5C5C60", "name": "dark steel"},
+        "accent": {"hex": "#B87333", "name": "copper warm"},
+        "background": {"hex": "#1A1A1C", "name": "polished dark"}
+      },
+      "iridescence": false,
+      "metallic_sheen": "bright",
+      "notes": "Most stable icosahedral QC, perfect for metallic palette"
+    },
+    {
+      "material": "Al-Pd-Mn icosahedral",
+      "appearance": "Silver with slight warmth, very reflective",
+      "palette": {
+        "base": {"hex": "#C8C8C8", "name": "bright silver"},
+        "highlight": {"hex": "#F0F0F0", "name": "near white"},
+        "shadow": {"hex": "#707070", "name": "medium grey"},
+        "accent": {"hex": "#D4AF37", "name": "gold accent"},
+        "background": {"hex": "#0A0A0A", "name": "polished black"}
+      },
+      "metallic_sheen": "mirror-like"
+    },
+    {
+      "material": "Icosahedrite (natural meteorite QC)",
+      "appearance": "Dark grey-black with metallic lustre, slight blue tint",
+      "palette": {
+        "base": {"hex": "#2F2F3A", "name": "space grey"},
+        "highlight": {"hex": "#6080A0", "name": "meteorite blue"},
+        "shadow": {"hex": "#101018", "name": "cosmic black"},
+        "accent": {"hex": "#8090B0", "name": "steel blue"},
+        "background": {"hex": "#050508", "name": "void black"}
+      },
+      "notes": "Natural quasicrystal from Khatyrka meteorite, Al63Cu24Fe13"
+    },
+    {
+      "material": "Cd-Yb icosahedral",
+      "appearance": "Bright silver-white with subtle yellow",
+      "palette": {
+        "base": {"hex": "#E8E8E8", "name": "cadmium white"},
+        "highlight": {"hex": "#FFFFF0", "name": "ivory white"},
+        "shadow": {"hex": "#909090", "name": "neutral grey"},
+        "accent": {"hex": "#FFD080", "name": "ytterbium gold"},
+        "background": {"hex": "#181818", "name": "dark silver"}
+      }
+    },
+    {
+      "material": "Al-Co-Ni decagonal",
+      "appearance": "Silvery with slight green-blue tint from cobalt",
+      "palette": {
+        "base": {"hex": "#A0A8B0", "name": "cobalt silver"},
+        "highlight": {"hex": "#D0D8E0", "name": "light cobalt"},
+        "shadow": {"hex": "#405060", "name": "dark cobalt"},
+        "accent": {"hex": "#6090C0", "name": "cobalt blue"},
+        "background": {"hex": "#080C10", "name": "deep cobalt black"}
+      },
+      "notes": "10-fold decagonal symmetry; cobalt gives blue tint"
+    }
+  ]
+}

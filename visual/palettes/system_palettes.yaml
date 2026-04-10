@@ -1,0 +1,103 @@
+---
+system_palettes:
+  penrose_p2:
+    name: "Penrose P2 Rhombi"
+    colors:
+      primary: "#FFD700"
+      secondary: "#CD7F32"
+      accent: "#FF8C00"
+      background: "#1C1008"
+      edge: "#8B6914"
+    description: "Golden warm palette evoking ancient mathematical gold"
+    mood: "warm, timeless, mathematical"
+    use_cases:
+      - floor_tiling_art
+      - mathematical_posters
+      - ancient_geometry_aesthetic
+
+  penrose_p3:
+    name: "Penrose P3 Kite-Dart"
+    colors:
+      primary: "#4169E1"
+      secondary: "#DC143C"
+      accent: "#FFD700"
+      background: "#0A0A1A"
+      edge: "#FFFFFF"
+    description: "High contrast blue-red duality reflecting kite-dart opposition"
+    mood: "dramatic, high-contrast, dynamic"
+    use_cases:
+      - pattern_design
+      - game_textures
+      - logo_design
+
+  ammann_beenker:
+    name: "Ammann-Beenker 8-fold"
+    colors:
+      primary: "#4682B4"
+      secondary: "#C0C0C0"
+      accent: "#00BFFF"
+      background: "#0D0D1A"
+      edge: "#708090"
+    description: "Silver-blue metallic palette for 8-fold crystalline aesthetic"
+    mood: "cool, precise, crystalline"
+    use_cases:
+      - metallic_textures
+      - tech_design
+      - crystallography_visualization
+
+  stampfli:
+    name: "Stampfli 12-fold"
+    colors:
+      primary: "#228B22"
+      secondary: "#90EE90"
+      accent: "#ADFF2F"
+      background: "#021002"
+      edge: "#006400"
+    description: "Geometric greens for 12-fold dodecagonal patterns"
+    mood: "natural, geometric, fractal"
+    use_cases:
+      - nature_inspired_art
+      - fractal_textures
+
+  trilobite_sphinx:
+    name: "Trilobite-Sphinx"
+    colors:
+      primary: "#8B4513"
+      secondary: "#DEB887"
+      accent: "#FF6347"
+      background: "#1A0800"
+      edge: "#A0522D"
+    description: "Earthy fossil tones for organic aperiodic shapes"
+    mood: "ancient, organic, archaeological"
+    use_cases:
+      - fossil_aesthetic
+      - organic_patterns
+
+  pinwheel:
+    name: "Pinwheel"
+    colors:
+      primary: "#FF1493"
+      secondary: "#00FFFF"
+      accent: "#FF69B4"
+      background: "#0A000F"
+      edge: "#FF00FF"
+    description: "High energy neon palette for infinite-rotation pinwheel chaos"
+    mood: "chaotic, electric, psychedelic"
+    use_cases:
+      - psychedelic_art
+      - animation
+      - music_visualization
+
+  robinson:
+    name: "Robinson"
+    colors:
+      primary: "#2F4F4F"
+      secondary: "#696969"
+      accent: "#A9A9A9"
+      background: "#050505"
+      edge: "#DCDCDC"
+    description: "Monochrome grey for the austere mathematical Robinson tiles"
+    mood: "austere, mathematical, minimal"
+    use_cases:
+      - minimal_design
+      - mathematical_diagrams

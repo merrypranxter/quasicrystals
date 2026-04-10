@@ -1,0 +1,38 @@
+{
+  "palette_name": "Penrose Golden",
+  "tiling": "Penrose P2 and P3",
+  "description": "Golden metallic palette inspired by Penrose tiling geometry and φ",
+  "primary_colors": {
+    "deep_gold": {"hex": "#B8860B", "rgb": [184, 134, 11], "hsl": [43, 89, 38], "usage": "thick rhombus fill"},
+    "bright_gold": {"hex": "#FFD700", "rgb": [255, 215, 0], "hsl": [51, 100, 50], "usage": "thin rhombus fill"},
+    "antique_bronze": {"hex": "#CD7F32", "rgb": [205, 127, 50], "hsl": [29, 57, 50], "usage": "edge lines"},
+    "warm_silver": {"hex": "#C0C0C0", "rgb": [192, 192, 192], "hsl": [0, 0, 75], "usage": "vertex highlights"},
+    "copper": {"hex": "#B87333", "rgb": [184, 115, 51], "hsl": [29, 57, 46], "usage": "accent"}
+  },
+  "secondary_colors": {
+    "pale_gold": {"hex": "#F0E68C", "rgb": [240, 230, 140], "hsl": [54, 77, 75], "usage": "light thick rhombus"},
+    "dark_bronze": {"hex": "#8B6914", "rgb": [139, 105, 20], "hsl": [43, 75, 31], "usage": "shadow/depth"},
+    "champagne": {"hex": "#F7E7CE", "rgb": [247, 231, 206], "hsl": [37, 78, 89], "usage": "background light"}
+  },
+  "background_colors": {
+    "deep_brown": {"hex": "#1C1008", "rgb": [28, 16, 8], "hsl": [25, 56, 7], "usage": "dark background"},
+    "warm_black": {"hex": "#120E00", "rgb": [18, 14, 0], "hsl": [47, 100, 4], "usage": "darkest background"},
+    "parchment": {"hex": "#F5F0DC", "rgb": [245, 240, 220], "hsl": [50, 63, 91], "usage": "light/paper background"}
+  },
+  "tile_specific": {
+    "acute_rhombus_72deg": {"primary": "#FFD700", "secondary": "#B8860B", "edge": "#8B6914"},
+    "obtuse_rhombus_36deg": {"primary": "#CD7F32", "secondary": "#8B4513", "edge": "#5C3007"},
+    "kite": {"primary": "#FFD700", "secondary": "#FFA500", "edge": "#B8860B"},
+    "dart": {"primary": "#B8860B", "secondary": "#8B4513", "edge": "#5C3007"}
+  },
+  "vertex_highlight_colors": {
+    "sun_vertex": "#FFD700",
+    "star_vertex": "#FFA500",
+    "ace_vertex": "#CD7F32",
+    "queen_vertex": "#B8860B",
+    "king_vertex": "#8B6914"
+  },
+  "ammann_line_color": "#FF4500",
+  "mood": "warm, mathematical, golden age",
+  "use_cases": ["floor tiling visualization", "mathematical art", "ancient geometry aesthetic"]
+}

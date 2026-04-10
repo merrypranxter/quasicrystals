@@ -1,0 +1,11 @@
+id,name,composition,formula,year,discoverer,symmetry_type,symmetry_fold,lattice_const_nm,density_g_cm3,hardness_vickers,conductivity_electrical_S_m,conductivity_thermal_W_mK,melting_point_C,stability_min_C,stability_max_C,tiling_analog,notes
+qc001,Icosahedral Al-Mn,Al86Mn14,Al₈₆Mn₁₄,1984,Dan Shechtman,icosahedral,5,0.46,3.75,700,3.5e5,2.5,820,600,820,3D Penrose,First discovered quasicrystal; Nobel Prize 2011 awarded to Shechtman
+qc002,Icosahedral Al-Cu-Fe,Al65Cu20Fe15,Al₆₅Cu₂₀Fe₁₅,1987,An Pang Tsai,icosahedral,5,0.635,4.18,800,1.2e5,5.5,970,700,970,3D Penrose,Thermodynamically stable icosahedral QC; low surface energy
+qc003,Decagonal Al-Mn-Pd,Al70Mn17Pd13,Al₇₀Mn₁₇Pd₁₃,1989,An Pang Tsai,decagonal,10,0.47,4.20,740,2.0e5,3.8,850,650,850,Penrose P2,2D quasiperiodic layers stacked periodically along c-axis
+qc004,Icosahedral Ti-Zr-Ni,Ti45Zr38Ni17,Ti₄₅Zr₃₈Ni₁₇,1994,An Pang Tsai,icosahedral,5,0.52,5.80,650,8.0e4,6.2,1050,800,1050,3D Penrose,Hydrogen storage properties; Bergman-type cluster structure
+qc005,Icosahedral Cd-Yb,Cd5.7Yb,Cd₅₇Yb₁₀,2000,An Pang Tsai,icosahedral,5,0.578,6.90,550,1.5e5,8.0,700,500,700,3D Penrose,Binary stable QC; Tsai cluster building block; metallic glass precursor
+qc006,Icosahedral Al-Pd-Mn,Al70Pd20Mn10,Al₇₀Pd₂₀Mn₁₀,1993,C. Beeli et al.,icosahedral,5,0.638,4.46,820,1.0e5,4.7,980,750,980,3D Penrose,High-quality single-grain QC; used for surface science studies
+qc007,Icosahedral Al-Li-Cu,Al56Li33Cu11,Al₅₆Li₃₃Cu₁₁,1986,Sainfort and Dubost,icosahedral,5,0.518,2.40,680,3.0e5,6.0,880,700,880,3D Penrose,Low density; lightweight structural application candidate
+qc008,Icosahedral Zn-Mg-Ho,Zn60Mg30Ho10,Zn₆₀Mg₃₀Ho₁₀,1994,Langsdorf et al.,icosahedral,5,0.535,4.50,550,9.0e4,5.0,790,600,790,3D Penrose,Rare-earth containing QC; magnetic properties of interest
+qc009,Decagonal Al-Co-Ni,Al71.5Co14.5Ni14,Al₇₁·₅Co₁₄·₅Ni₁₄,1989,Tsai et al.,decagonal,10,0.406,4.01,710,1.8e5,4.3,1100,800,1100,Penrose P2,High-quality decagonal QC; well-studied surface atomic structure
+qc010,Dodecagonal Cr-Ni,Cr75Ni25,Cr₇₅Ni₂₅,1987,Ishimasa et al.,dodecagonal,12,0.45,7.80,600,1.1e6,15.0,1300,1000,1300,Stampfli 12-fold,First known dodecagonal QC; thin-film specimen

@@ -1,0 +1,94 @@
+---
+texture_specifications:
+  penrose_p2:
+    texture_name: "Golden Rhombus Field"
+    complexity: 7
+    recursion_depth_recommended: 5
+    symmetry_axes: 5
+    visual_weight: "medium-heavy"
+    edge_sharpness: "sharp"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 8
+    tile_size_variation: false
+    primary_motif: "radiating 5-pointed star patches"
+    scale_behavior: "self-similar at φ^n scales"
+    animation_suitability: "high - inflation growth mesmerizing"
+
+  penrose_p3:
+    texture_name: "Kite-Dart Mosaic"
+    complexity: 7
+    recursion_depth_recommended: 5
+    symmetry_axes: 5
+    visual_weight: "medium"
+    edge_sharpness: "sharp"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 9
+    primary_motif: "alternating kite-dart star bursts"
+    scale_behavior: "self-similar at φ^n scales"
+
+  ammann_beenker:
+    texture_name: "Silver Octagram Grid"
+    complexity: 6
+    recursion_depth_recommended: 4
+    symmetry_axes: 8
+    visual_weight: "medium"
+    edge_sharpness: "sharp"
+    interlocking_pattern: true
+    fractal_like: false
+    hypnotic_rating: 7
+    primary_motif: "8-pointed star centers, square lattice patches"
+    scale_behavior: "self-similar at δ_S^n scales"
+
+  stampfli:
+    texture_name: "Dodecagonal Shield"
+    complexity: 8
+    recursion_depth_recommended: 4
+    symmetry_axes: 12
+    visual_weight: "heavy"
+    edge_sharpness: "sharp"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 9
+    primary_motif: "12-fold star rosettes"
+    scale_behavior: "self-similar at (2+√3)^n scales"
+
+  trilobite_sphinx:
+    texture_name: "Organic Aperiodic Mosaic"
+    complexity: 9
+    recursion_depth_recommended: 3
+    symmetry_axes: 5
+    visual_weight: "heavy"
+    edge_sharpness: "irregular"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 7
+    primary_motif: "trilobite/creature silhouettes interlocking"
+    biological_aesthetic: true
+
+  pinwheel:
+    texture_name: "Infinite Rotation Field"
+    complexity: 9
+    recursion_depth_recommended: 6
+    symmetry_axes: 0
+    visual_weight: "chaotic"
+    edge_sharpness: "sharp"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 10
+    primary_motif: "right triangles at all angles, spiraling"
+    unique_property: "statistically isotropic"
+
+  robinson:
+    texture_name: "Hierarchical Square Nesting"
+    complexity: 6
+    recursion_depth_recommended: 5
+    symmetry_axes: 4
+    visual_weight: "medium"
+    edge_sharpness: "sharp with notches"
+    interlocking_pattern: true
+    fractal_like: true
+    hypnotic_rating: 6
+    primary_motif: "nested squares with notch-bump connectors"
+    historical_significance: "one of earliest aperiodic tile sets"
