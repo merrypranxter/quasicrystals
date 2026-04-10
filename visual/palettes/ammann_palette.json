@@ -1,0 +1,28 @@
+{
+  "palette_name": "Ammann Silver-Blue",
+  "tiling": "Ammann-Beenker",
+  "description": "Cool silver-blue palette for 8-fold octagonal tiling, inspired by metallic quasicrystal surfaces",
+  "primary_colors": {
+    "steel_blue": {"hex": "#4682B4", "rgb": [70, 130, 180], "hsl": [207, 44, 49], "usage": "square fill"},
+    "silver_white": {"hex": "#E8E8E8", "rgb": [232, 232, 232], "hsl": [0, 0, 91], "usage": "rhombus fill"},
+    "slate_grey": {"hex": "#708090", "rgb": [112, 128, 144], "hsl": [210, 13, 50], "usage": "edge lines"},
+    "ice_blue": {"hex": "#B0E2FF", "rgb": [176, 226, 255], "hsl": [202, 100, 85], "usage": "highlight"},
+    "deep_navy": {"hex": "#0A1045", "rgb": [10, 16, 69], "hsl": [233, 75, 15], "usage": "background"}
+  },
+  "secondary_colors": {
+    "metallic_silver": {"hex": "#C0C8D0", "rgb": [192, 200, 208], "hsl": [210, 14, 78], "usage": "secondary fill"},
+    "cobalt": {"hex": "#0047AB", "rgb": [0, 71, 171], "hsl": [219, 100, 34], "usage": "accent"},
+    "pale_steel": {"hex": "#D8E4EC", "rgb": [216, 228, 236], "hsl": [204, 35, 89], "usage": "light variant"}
+  },
+  "background_colors": {
+    "dark_slate": {"hex": "#1A1A2E", "rgb": [26, 26, 46], "hsl": [240, 28, 14], "usage": "dark background"},
+    "midnight_blue": {"hex": "#0D0D1A", "rgb": [13, 13, 26], "hsl": [240, 33, 8], "usage": "darkest"},
+    "light_grey": {"hex": "#F0F4F8", "rgb": [240, 244, 248], "hsl": [210, 43, 96], "usage": "light background"}
+  },
+  "tile_specific": {
+    "square": {"primary": "#4682B4", "secondary": "#2C5F8A", "edge": "#1A3A5C"},
+    "rhombus_45deg": {"primary": "#C0C8D0", "secondary": "#8090A0", "edge": "#506070"}
+  },
+  "mood": "cool, precise, crystalline, mathematical",
+  "use_cases": ["technical visualization", "metallic material design", "crystallography art"]
+}

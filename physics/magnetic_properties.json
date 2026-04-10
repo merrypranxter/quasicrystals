@@ -1,0 +1,32 @@
+{
+  "description": "Magnetic properties of quasicrystal materials",
+  "general_notes": "Most Al-based QC are non-magnetic or weakly paramagnetic. RE-containing QC can show complex magnetism.",
+  "materials": [
+    {
+      "material": "Al-Pd-Mn icosahedral",
+      "magnetic_type": "paramagnetic",
+      "susceptibility_emu_mol": 1.2e-4,
+      "curie_weiss_temperature_K": -5,
+      "notes": "Mn contributes local moments, but frustrated by icosahedral geometry"
+    },
+    {
+      "material": "Zn-Mg-Ho icosahedral",
+      "magnetic_type": "spin glass / frustrated magnet",
+      "ordering_temperature_K": 5.8,
+      "susceptibility_behavior": "spin glass freezing below 5.8K",
+      "notes": "Ho (holmium) RE gives strong local moments; icosahedral geometry frustrates ordering"
+    },
+    {
+      "material": "Zn-Mg-Tb icosahedral",
+      "magnetic_type": "spin glass",
+      "ordering_temperature_K": 5.5,
+      "notes": "Similar to Ho analog"
+    },
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "magnetic_type": "diamagnetic/paramagnetic",
+      "susceptibility_emu_mol": 2e-5,
+      "notes": "Very weak magnetism; Fe mostly non-magnetic in this structure"
+    }
+  ]
+}

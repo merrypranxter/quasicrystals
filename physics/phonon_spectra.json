@@ -1,0 +1,33 @@
+{
+  "description": "Phonon (lattice vibration) data for quasicrystal materials",
+  "unique_features": ["phason modes unique to quasicrystals", "fractal-like density of states", "low-energy phonon deficit", "unusual acoustic branch"],
+  "phason_explanation": "Phasons are collective rearrangements of atoms without net displacement - unique to quasicrystals. They represent diffusive motion in perpendicular space.",
+  "materials": [
+    {
+      "material": "Al-Pd-Mn icosahedral",
+      "acoustic_branch_THz": [0.5, 1.0, 1.8, 2.5, 3.2],
+      "optical_branch_THz": [4.5, 6.8, 9.2, 12.1, 15.0],
+      "phason_mode_THz": [0.1, 0.3, 0.8],
+      "debye_temperature_K": 350,
+      "phonon_velocity_m_s": 5100,
+      "DOS_notes": "Fractal-like fine structure in phonon DOS; pseudogap feature",
+      "inelastic_neutron_scattering_ref": "Niermann et al., Phys Rev Lett 1995"
+    },
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "acoustic_branch_THz": [0.4, 0.9, 1.7, 2.4, 3.0],
+      "optical_branch_THz": [4.2, 6.5, 8.9, 11.5, 14.2],
+      "phason_mode_THz": [0.08, 0.25, 0.7],
+      "debye_temperature_K": 320,
+      "phonon_velocity_m_s": 4800
+    },
+    {
+      "material": "Al-Co-Ni decagonal",
+      "acoustic_branch_THz": [0.6, 1.2, 2.0, 2.8, 3.5],
+      "optical_branch_THz": [5.0, 7.5, 10.0, 13.0, 16.0],
+      "periodic_axis_phonons": "normal dispersion along 10-fold periodic axis",
+      "debye_temperature_K": 380,
+      "notes": "Anisotropic phonons: periodic along 10-fold, quasiperiodic in plane"
+    }
+  ]
+}

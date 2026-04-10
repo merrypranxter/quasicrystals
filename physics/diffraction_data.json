@@ -1,0 +1,36 @@
+{
+  "description": "X-ray and electron diffraction data for quasicrystal materials",
+  "key_principle": "Irrational tau = phi = 1.618... ratios between principal peak positions; requires 6 integer indices for icosahedral",
+  "indexing_scheme": {
+    "icosahedral": "6 integers (h1 h2 h3 h4 h5 h6) along 6 reciprocal lattice vectors",
+    "decagonal": "5 integers in plane + 1 along periodic axis",
+    "peak_ratio_test": "ratio of any two principal d-spacings is a power of tau"
+  },
+  "materials": [
+    {
+      "material": "Al-Mn icosahedral (Shechtman 1984)",
+      "radiation": "electron diffraction",
+      "principal_d_spacings_nm": [0.204, 0.126, 0.078, 0.048],
+      "d_spacing_ratios": "0.204/0.126 ~ 1.619 ~ tau",
+      "symmetry_observed": "icosahedral (10-fold zone axis shows 10 spots)",
+      "zone_axes": ["5-fold (shows 10 spots)", "3-fold (shows 6 spots)", "2-fold (shows 4 spots)"],
+      "lattice_parameter_nm": 0.46,
+      "pattern_description": "Sharp spots in 10-fold arrangement - impossible for periodic crystal"
+    },
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "radiation": "X-ray (Cu Kalpha)",
+      "principal_d_spacings_nm": [0.208, 0.128, 0.079, 0.049],
+      "lattice_parameter_nm": 0.637,
+      "notes": "Stable phase; single crystal samples show perfect icosahedral diffraction"
+    },
+    {
+      "material": "Al-Co-Ni decagonal",
+      "radiation": "X-ray",
+      "c_axis_period_nm": 0.408,
+      "quasiperiodic_plane_d_spacings_nm": [0.215, 0.133],
+      "in_plane_ratio": "tau",
+      "pattern_type": "10-fold in plane, periodic streaks along c"
+    }
+  ]
+}

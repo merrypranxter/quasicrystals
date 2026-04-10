@@ -1,0 +1,52 @@
+{
+  "description": "Phase diagram data for quasicrystal-forming systems",
+  "materials": [
+    {
+      "system": "Al-Cu-Fe",
+      "type": "ternary",
+      "qc_phase": "icosahedral (i-phase)",
+      "composition_range": {"Al": [60, 65], "Cu": [23, 27], "Fe": [10, 14]},
+      "optimal_composition": "Al62Cu25.5Fe12.5",
+      "stability_range_C": [700, 900],
+      "melting_point_C": 910,
+      "competing_phases": ["beta-Al(Cu,Fe)", "omega-Al7Cu2Fe", "lambda-Al13Fe4"],
+      "annealing_conditions": "anneal at 800C for 24h in inert atmosphere",
+      "notes": "Most stable icosahedral QC; thermodynamically stable (not metastable)"
+    },
+    {
+      "system": "Al-Mn",
+      "type": "binary",
+      "qc_phase": "icosahedral (metastable)",
+      "composition_at_percent_Mn": 14,
+      "stability": "metastable - transforms to crystalline on annealing",
+      "formation_method": "rapid solidification (melt spinning)",
+      "notes": "Shechtman's original material; not thermodynamically stable"
+    },
+    {
+      "system": "Al-Pd-Mn",
+      "type": "ternary",
+      "qc_phase": "icosahedral",
+      "composition_range": {"Al": [68, 72], "Pd": [18, 22], "Mn": [8, 12]},
+      "stability_range_C": [750, 980],
+      "notes": "Large single crystals can be grown; ideal for experiments"
+    },
+    {
+      "system": "Cd-Yb",
+      "type": "binary",
+      "qc_phase": "icosahedral (Tsai-type)",
+      "composition_Cd_percent": 84.5,
+      "stability": "thermodynamically stable",
+      "discovery_year": 2000,
+      "discoverer": "An-Pang Tsai",
+      "notes": "First binary icosahedral QC; Tsai cluster structure"
+    },
+    {
+      "system": "Al-Co-Ni",
+      "type": "ternary",
+      "qc_phase": "decagonal",
+      "composition_range": {"Al": [70, 74], "Co": [6, 10], "Ni": [18, 22]},
+      "stability_range_C": [800, 1100],
+      "notes": "Model decagonal QC; many structural studies"
+    }
+  ]
+}

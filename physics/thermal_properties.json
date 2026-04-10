@@ -1,0 +1,36 @@
+{
+  "description": "Thermal properties of quasicrystal materials",
+  "key_feature": "Unusually low thermal conductivity for metallic alloys - comparable to disordered systems despite sharp diffraction peaks",
+  "materials": [
+    {
+      "material": "Al-Cu-Fe icosahedral",
+      "thermal_conductivity_W_mK": 2.5,
+      "specific_heat_J_molK_at_300K": 26.8,
+      "thermal_expansion_coefficient_per_K": 1.3e-5,
+      "debye_temperature_K": 320,
+      "comparison": "Al metal = 237 W/mK; Al-Cu-Fe QC ~ 100x lower",
+      "mechanism": "Phason and phonon scattering; low phonon mean free path"
+    },
+    {
+      "material": "Al-Pd-Mn icosahedral",
+      "thermal_conductivity_W_mK": 3.2,
+      "specific_heat_J_molK_at_300K": 27.5,
+      "thermal_expansion_coefficient_per_K": 1.2e-5,
+      "debye_temperature_K": 350
+    },
+    {
+      "material": "i-AlLiCu",
+      "thermal_conductivity_W_mK": 2.0,
+      "specific_heat_J_molK_at_300K": 25.0,
+      "thermal_expansion_coefficient_per_K": 1.4e-5
+    },
+    {
+      "material": "Al-Co-Ni decagonal",
+      "thermal_conductivity_W_mK": 4.0,
+      "thermal_conductivity_W_mK_along_10fold": 4.5,
+      "thermal_conductivity_W_mK_perpendicular": 3.5,
+      "notes": "Anisotropic: slightly higher along periodic 10-fold axis"
+    }
+  ],
+  "applications": ["thermal barrier coatings", "solar cell absorbers", "cookware coatings (low thermal conductivity)"]
+}
