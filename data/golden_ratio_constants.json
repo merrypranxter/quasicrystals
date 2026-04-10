@@ -1,0 +1,115 @@
+{
+  "golden_ratio": {
+    "symbol": "φ (phi)",
+    "exact_form": "(1 + √5) / 2",
+    "decimal": 1.6180339887498948482,
+    "continued_fraction": "[1; 1, 1, 1, 1, ...]",
+    "algebraic_equation": "φ² = φ + 1",
+    "minimal_polynomial": "x² - x - 1 = 0",
+    "reciprocal": 0.6180339887498948482,
+    "reciprocal_note": "1/φ = φ - 1 = φ⁻¹",
+    "square": 2.6180339887498948482,
+    "square_note": "φ² = φ + 1",
+    "negative_power_1": 0.6180339887498948482,
+    "negative_power_2": 0.3819660112501051518,
+    "negative_power_3": 0.2360679774997896964,
+    "powers": {
+      "phi_0": 1.0,
+      "phi_1": 1.6180339887498948482,
+      "phi_2": 2.6180339887498948482,
+      "phi_3": 4.2360679774997896964,
+      "phi_4": 6.8541019662496847,
+      "phi_5": 11.090169943749474,
+      "phi_6": 17.944271909999159,
+      "phi_7": 29.034441853748634,
+      "phi_8": 46.97871176374779,
+      "phi_9": 76.01315362374642,
+      "phi_10": 122.99186938749421,
+      "phi_minus_1": 0.6180339887498948482,
+      "phi_minus_2": 0.3819660112501051518,
+      "phi_minus_3": 0.2360679774997896964,
+      "phi_minus_4": 0.1458980337496088454,
+      "phi_minus_5": 0.09016994374978604978
+    },
+    "fibonacci_connection": "F(n+1)/F(n) → φ as n → ∞",
+    "lucas_connection": "L(n+1)/L(n) → φ as n → ∞",
+    "geometric_properties": {
+      "golden_rectangle": "Rectangle with sides in ratio φ:1; removing a square leaves a smaller golden rectangle",
+      "golden_spiral": "Logarithmic spiral with growth factor φ per 90° turn",
+      "regular_pentagon_diagonal": "In a unit regular pentagon, diagonal = φ",
+      "icosahedron": "Three mutually perpendicular golden rectangles define icosahedron vertices",
+      "penrose_rhombus": "Diagonals of thick Penrose rhombus are in ratio φ:1"
+    }
+  },
+  "sqrt5": 2.2360679774997896964,
+  "sqrt5_half": 1.1180339887498948482,
+  "silver_ratio": {
+    "symbol": "δ_S",
+    "name": "Silver ratio (Pell constant)",
+    "exact_form": "1 + √2",
+    "decimal": 2.4142135623730950488,
+    "algebraic_equation": "δ_S² = 2δ_S + 1",
+    "minimal_polynomial": "x² - 2x - 1 = 0",
+    "reciprocal": 0.4142135623730950488,
+    "reciprocal_note": "1/δ_S = δ_S - 2 = √2 - 1",
+    "continued_fraction": "[2; 2, 2, 2, 2, ...]",
+    "used_in": "Ammann-Beenker tiling (8-fold symmetry); octagonal quasicrystals",
+    "pell_numbers": "Convergents of continued fraction [2;2,2,...] are Pell numbers: 1,2,5,12,29,70,169...",
+    "powers": {
+      "delta_0": 1.0,
+      "delta_1": 2.4142135623730950488,
+      "delta_2": 5.8284271247461900976,
+      "delta_3": 14.071067811865476,
+      "delta_4": 33.970562748477143,
+      "delta_minus_1": 0.4142135623730950488,
+      "delta_minus_2": 0.17157287525380993,
+      "delta_minus_3": 0.07106781186547573
+    }
+  },
+  "bronze_ratio": {
+    "name": "Bronze ratio",
+    "exact_form": "(3 + √13) / 2",
+    "decimal": 3.3027756377319946,
+    "algebraic_equation": "β² = 3β + 1",
+    "used_in": "Some 12-fold tilings; alongside 2+√3"
+  },
+  "tribonacci_constant": {
+    "name": "Tribonacci constant",
+    "decimal": 1.8392867552141612,
+    "algebraic_equation": "t³ = t² + t + 1",
+    "minimal_polynomial": "x³ - x² - x - 1 = 0",
+    "connection": "Limit of tribonacci sequence ratios T(n+1)/T(n)",
+    "used_in": "Some 3D quasiperiodic systems; related to 3-component substitution sequences"
+  },
+  "sqrt2": 1.4142135623730950488,
+  "sqrt3": 1.7320508075688772935,
+  "two_plus_sqrt3": 3.7320508075688772935,
+  "two_plus_sqrt3_note": "Inflation ratio for Stampfli 12-fold tiling",
+  "quasicrystal_relationships": {
+    "penrose_inflation": "Each inflation step scales by φ; tile frequency ratio thick:thin → φ:1 as n → ∞",
+    "icosahedral_geometry": "Ratios of body diagonals in icosahedron equal φ; icosahedron vertices defined by three mutually perpendicular golden rectangles",
+    "fibonacci_connection": "lim(n→∞) F(n+1)/F(n) = φ where F(n) are Fibonacci numbers",
+    "ammann_beenker_inflation": "Each inflation step scales by δ_S = 1+√2 (silver ratio)",
+    "penrose_diagonal_ratio": "Long diagonal of thick rhombus / short diagonal = φ",
+    "penrose_thin_rhombus_diagonals": "Diagonals of thin Penrose rhombus ratio = φ",
+    "stampfli_12fold_inflation": "Stampfli tiling inflates by factor 2+√3",
+    "6D_hypercubic_projection": "Icosahedral QC: projection of Z^6 with 6D basis vectors related to icosahedral rotations; φ appears in the 2×2 blocks as irrational part",
+    "de_bruijn_pentagrid": "Penrose P2/P3 can be constructed as dual of 5 sets of parallel lines (pentagrid); spacing involves 1/φ"
+  },
+  "identities": {
+    "phi_squared": "φ² = φ + 1 = 2.618...",
+    "phi_reciprocal": "1/φ = φ - 1 = 0.618...",
+    "phi_plus_reciprocal": "φ + 1/φ = √5",
+    "phi_minus_reciprocal": "φ - 1/φ = 1",
+    "phi_power_recurrence": "φ^n = F(n)·φ + F(n-1) for Fibonacci numbers F(n)",
+    "silver_squared": "δ² = 2δ + 1",
+    "silver_reciprocal": "1/δ = δ - 2 = √2 - 1",
+    "binet_fibonacci": "F(n) = (φ^n - ψ^n)/√5 where ψ = -1/φ = (1-√5)/2",
+    "binet_lucas": "L(n) = φ^n + ψ^n"
+  },
+  "metadata": {
+    "version": "1.0",
+    "precision_note": "Values given to 19 significant figures where known",
+    "phi_exact_digits_20": "1.61803398874989484820"
+  }
+}
